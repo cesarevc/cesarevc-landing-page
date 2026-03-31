@@ -61,22 +61,21 @@ const hero: HeroContent = {
 const about: AboutContent = {
   num:           "01.",
   label:         "Sobre mí",
-  heading:       "Código con propósito,",
-  headingAccent: "soluciones que duran",
-  bio1: "Soy desarrollador de software con experiencia construyendo productos digitales desde cero. Me especializo en el desarrollo full stack, trabajando tanto en interfaces de usuario intuitivas como en backends robustos y escalables.",
-  bio2: "Me apasiona resolver problemas complejos con soluciones elegantes. Trabajo de forma colaborativa, con atención al detalle y siempre aprendiendo nuevas tecnologías.",
+  heading:       "Código que escala,",
+  headingAccent: "soluciones que impactan",
+  bio1: "Soy desarrollador Full Stack con experiencia construyendo y desplegando aplicaciones, llevándolas desde cero hasta aterrizar en entornos productivos, mi experiencia es principalmente en el sector financiero y con startups.",
+  bio2: "Me enfoco en construir software que no solo funcione, sino que sea mantenible, escalable y eficiente. He trabajado con arquitecturas modernas como microfrontends y microservicios, integrando pipelines de CI/CD y automatizando procesos para mejorar la entrega de valor.",
   stats: [
-    { num: "3+",  label: "Años de experiencia" },
+    { num: "6+",  label: "Años de experiencia" },
     { num: "20+", label: "Proyectos entregados" },
-    { num: "10+", label: "Clientes satisfechos" },
   ],
   terminalCmd: "git log --oneline --graph",
   commits: [
-    { hash: "a3f8c12", type: "feat",     typeColor: "#22c55e", msg: "lanzar carrera como desarrollador full stack",     time: "hace 3 años"   },
-    { hash: "b7e2f40", type: "feat",     typeColor: "#22c55e", msg: "dominar React, Node.js y arquitectura REST",        time: "hace 2.5 años" },
-    { hash: "c9d1a35", type: "refactor", typeColor: "#f59e0b", msg: "migrar de jQuery a componentes modernos",           time: "hace 2 años"   },
+    { hash: "a3f8c12", type: "feat",     typeColor: "#22c55e", msg: "lanzar carrera como desarrollador full stack",     time: "hace 6 años"   },
+    { hash: "b7e2f40", type: "feat",     typeColor: "#22c55e", msg: "dominar React, Node.js y arquitectura REST",        time: "hace 5 años" },
+    { hash: "c9d1a35", type: "refactor", typeColor: "#f59e0b", msg: "migrar aplicación movil nativa a una arquitectura microfrontend", time: "hace 2 años"   },
     { hash: "d4f8b22", type: "feat",     typeColor: "#22c55e", msg: "adoptar Docker, AWS y pipelines de CI/CD",          time: "hace 1.5 años" },
-    { hash: "e1c7d90", type: "feat",     typeColor: "#22c55e", msg: "integrar IA — Claude API + OpenAI en producción",  time: "hace 8 meses"  },
+    { hash: "e1c7d90", type: "feat",     typeColor: "#22c55e", msg: "integrar IA — Claude Code + OpenAI en producción",  time: "hace 8 meses"  },
     { hash: "f5a2e67", type: "build",    typeColor: "#6366f1", msg: "construyendo el próximo gran proyecto...",          time: "ahora · HEAD", isHead: true },
   ],
 };
@@ -98,7 +97,7 @@ const skills: SkillsContent = {
           <polyline points="8 6 2 12 8 18" />
         </svg>
       ),
-      skills: ["React / Next.js", "JavaScript / TypeScript", "HTML5 / CSS3 / Tailwind", "React Native"],
+      skills: ["React / React Native / Next.js", "JavaScript / TypeScript", "HTML5 / CSS3 / Tailwind", "Angular / Vue"],
     },
     {
       title:  "Backend",
@@ -110,7 +109,7 @@ const skills: SkillsContent = {
           <line x1="12" y1="17" x2="12" y2="21" />
         </svg>
       ),
-      skills: ["Node.js / Express", "Python / Django / FastAPI", "PostgreSQL / MySQL / MongoDB", "Redis / APIs REST / GraphQL"],
+      skills: ["Node.js / Express", "Java / Spring Boot", "PostgreSQL / MySQL / MongoDB", "Redis / APIs REST / GraphQL"],
     },
     {
       title:  "DevOps & Tools",
@@ -121,10 +120,10 @@ const skills: SkillsContent = {
           <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
         </svg>
       ),
-      skills: ["Docker / CI/CD pipelines", "AWS / GCP / Vercel", "Git / GitHub / Linux", "IA / Claude API / OpenAI"],
+      skills: ["Docker / CI/CD pipelines", "AWS / Azure / Vercel", "Git / GitHub / Linux", "IA / Claude API / OpenAI"],
     },
   ],
-  extras: ["Webpack", "Vite", "Prisma", "Jest", "Cypress", "Figma", "Redux", "Zustand", "Jira", "Swagger"],
+  extras: ["Webpack", "Vite", "Jest", "Cypress", "Kubernetes", "Redux", "Zustand", "Jira", "Swagger"],
 };
 
 // ─── Projects ────────────────────────────────────────────────────────────────
@@ -156,10 +155,10 @@ const projects: ProjectsContent = {
       demo:        "#",
       accentColor: "#818cf8",
       snippet: `const msg = await anthropic.messages.create({
-  model: "claude-opus-4-6",
-  messages: [{ role: "user",
-    content: userInput }]
-})`,
+        model: "claude-opus-4-6",
+        messages: [{ role: "user",
+          content: userInput }]
+      })`,
     },
     {
       title: "Dashboard Analytics",
