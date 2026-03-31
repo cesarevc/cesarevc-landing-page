@@ -10,7 +10,7 @@ import { CONTENT } from "@/constants/content";
 export default function Home() {
   return (
     <>
-      <Nav      nav={CONTENT.nav} />
+      <Nav nav={CONTENT.nav} />
       <main>
         <Hero     hero={CONTENT.hero} />
         <About    about={CONTENT.about} />

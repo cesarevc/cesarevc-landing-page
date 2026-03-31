@@ -49,7 +49,7 @@ export default function Footer({ footer }: FooterProps) {
           </a>
           <p
             className="font-mono flex items-center gap-1.5"
-            style={{ fontSize: "0.6rem", color: "#202040" }}
+            style={{ fontSize: "0.6rem", color: "#393C64" }}
           >
             <span style={{ color: "#6366f1" }}>❯</span>
             {tagline}
@@ -82,7 +82,7 @@ export default function Footer({ footer }: FooterProps) {
                 aria-label={s.label}
                 className="w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-200 hover:text-[#818cf8]"
                 style={{
-                  color: "#2a2a50",
+                  color: "#393C64",
                   background: "rgba(18,18,38,0.6)",
                   border: "1px solid #18183a",
                 }}
@@ -93,7 +93,7 @@ export default function Footer({ footer }: FooterProps) {
           </div>
           <p
             className="font-mono"
-            style={{ fontSize: "0.6rem", color: "#181830" }}
+            style={{ fontSize: "0.6rem", color: "#393C64" }}
           >
             {copyright}
           </p>
