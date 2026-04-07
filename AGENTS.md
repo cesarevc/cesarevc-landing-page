@@ -69,7 +69,8 @@ Paleta oscura premium inspirada en terminales e IDEs modernos, con acentos indig
 ## Estructura de proyecto
 
 ```
-portfolio-nextjs/
+
+cesarevc-landing-page/
 ├── app/                    # App Router (Next.js 16+)
 │   ├── layout.tsx         # Layout raíz con metadata y providers
 │   ├── page.tsx           # Página principal (/)
